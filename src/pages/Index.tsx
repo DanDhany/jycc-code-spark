@@ -11,16 +11,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header Organizer */}
+      <div className="bg-card border-b border-border py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center gap-3 text-foreground">
+            <span className="font-semibold text-lg">Dinas Komunikasi dan Informatika Prov. Jawa Timur</span>
+            <span className="text-muted-foreground">×</span>
+            <span className="font-semibold text-lg">Universitas Surabaya</span>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[image:var(--gradient-hero)] opacity-95" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
         
-        <div className="relative container mx-auto px-4 py-24 md:py-32">
+        <div className="relative container mx-auto px-4 py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-2 backdrop-blur-sm">
-              Dinas Komunikasi dan Informatika Provinsi Jawa Timur
-            </Badge>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in">
               Jatim Youth Codepreneur Challenge
@@ -444,6 +452,51 @@ const Index = () => {
             <div className="pt-8 space-y-2">
               <p className="text-white/80">Informasi lebih lanjut:</p>
               <p className="text-white font-semibold">jycc.jatimprov.go.id</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners & Sponsors Section */}
+      <section className="py-16 bg-card border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Didukung Oleh
+              </h2>
+            </div>
+            
+            <div className="space-y-12">
+              {/* Government Institutions */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
+                  Instansi Pemerintah
+                </h3>
+                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Diskominfo Jatim</span>
+                  </div>
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Pemprov Jatim</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Universities */}
+              <div>
+                <h3 className="text-center text-sm font-semibold text-muted-foreground mb-6 uppercase tracking-wider">
+                  Perguruan Tinggi
+                </h3>
+                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Universitas Surabaya</span>
+                  </div>
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Kampus Partner</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
