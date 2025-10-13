@@ -18,10 +18,10 @@ const Index = () => {
       {/* Header Organizer */}
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-3 text-foreground">
-            <span className="font-semibold text-lg">Dinas Komunikasi dan Informatika Prov. Jawa Timur</span>
-            <span className="text-muted-foreground">×</span>
-            <span className="font-semibold text-lg">Universitas Surabaya</span>
+          <div className="flex items-center justify-center gap-6 text-foreground">
+            <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Prov. Jawa Timur" className="h-12 object-contain" />
+            <span className="text-muted-foreground text-2xl">×</span>
+            <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="h-12 object-contain" />
           </div>
         </div>
       </div>
@@ -474,11 +474,11 @@ const Index = () => {
                   Instansi Pemerintah
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
-                    <span className="text-xs text-center text-muted-foreground px-4">Logo Diskominfo Jatim</span>
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
+                    <img src="/logo-kominfo-jatim-Zpmey.png" alt="Diskominfo Jatim" className="w-full h-full object-contain" />
                   </div>
-                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
-                    <span className="text-xs text-center text-muted-foreground px-4">Logo Pemprov Jatim</span>
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
+                    <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </div>
@@ -489,11 +489,8 @@ const Index = () => {
                   Perguruan Tinggi
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
-                    <span className="text-xs text-center text-muted-foreground px-4">Logo Universitas Surabaya</span>
-                  </div>
-                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
-                    <span className="text-xs text-center text-muted-foreground px-4">Logo Kampus Partner</span>
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
+                    <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </div>
