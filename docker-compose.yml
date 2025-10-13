@@ -1,13 +1,6 @@
 services:
   jycc-landing:
-    image: node:20-alpine
-    working_dir: /app
-    command: sh -c "npm install -g bun && bun install && bun run dev --host"
+    build: .
     ports:
-      - "8100:8080"
-    volumes:
-      - .:/app
-      - /app/node_modules
+      - "8100:80"
     restart: unless-stopped
-    environment:
-      - NODE_ENV=development
