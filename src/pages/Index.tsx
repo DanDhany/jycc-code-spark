@@ -65,7 +65,7 @@ const Index = () => {
             </div>
 
             <div className="flex justify-center animate-fade-in">
-              <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/20 text-white border border-destructive/40">
+              <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/30 text-white border border-destructive/40 ring-1 ring-destructive/50 shadow-sm shadow-destructive/20 animate-pulse">
                 PENTING: Batas pendaftaran 22 Oktober 2025
               </Badge>
             </div>
@@ -74,7 +74,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Trophy className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">Rp 18.000.000</p>
+                  <p className="text-2xl font-bold text-white">18 Juta</p>
                   <p className="text-sm text-white/80">Total Hadiah</p>
                 </CardContent>
               </Card>
@@ -95,7 +95,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Calendar className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">24 November 2025</p>
+                  <p className="text-xl md:text-2xl font-bold text-white whitespace-nowrap">24 November 2025</p>
                   <p className="text-sm text-white/80">Grand Final</p>
                 </CardContent>
               </Card>
@@ -244,7 +244,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">Hadiah</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Total Hadiah Rp 18.000.000 + Beasiswa Kuliah
+                Total Hadiah Senilai 18 Juta + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
                 Raih kesempatan beasiswa kuliah di Universitas Surabaya dengan potongan hingga 75%
