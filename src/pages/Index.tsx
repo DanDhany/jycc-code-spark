@@ -19,9 +19,9 @@ const Index = () => {
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-3 text-foreground">
-            <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Prov. Jawa Timur" className="h-10" />
+            <span className="font-semibold text-lg">Dinas Komunikasi dan Informatika Prov. Jawa Timur</span>
             <span className="text-muted-foreground">×</span>
-            <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="h-10" />
+            <span className="font-semibold text-lg">Universitas Surabaya</span>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Trophy className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">19 Juta</p>
+                  <p className="text-2xl font-bold text-white">16 Juta</p>
                   <p className="text-sm text-white/80">Total Hadiah</p>
                 </CardContent>
               </Card>
@@ -238,7 +238,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">Hadiah</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Total Hadiah 19 Juta + Beasiswa Kuliah
+                Total Hadiah 16 Juta + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
                 Raih kesempatan beasiswa kuliah di Universitas Surabaya dengan potongan hingga 75%
@@ -474,11 +474,11 @@ const Index = () => {
                   Instansi Pemerintah
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
-                    <img src="/logo-kominfo-jatim-Zpmey.png" alt="Diskominfo Jatim" className="w-full h-full object-contain" />
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Diskominfo Jatim</span>
                   </div>
-                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
-                    <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="w-full h-full object-contain" />
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-primary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Pemprov Jatim</span>
                   </div>
                 </div>
               </div>
@@ -489,8 +489,11 @@ const Index = () => {
                   Perguruan Tinggi
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-xl flex items-center justify-center p-4">
-                    <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="w-full h-full object-contain" />
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Universitas Surabaya</span>
+                  </div>
+                  <div className="w-32 h-32 md:w-40 md:h-40 bg-muted/30 rounded-xl flex items-center justify-center border-2 border-border hover:border-secondary/30 transition-colors">
+                    <span className="text-xs text-center text-muted-foreground px-4">Logo Kampus Partner</span>
                   </div>
                 </div>
               </div>
