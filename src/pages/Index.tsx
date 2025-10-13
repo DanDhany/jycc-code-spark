@@ -6,7 +6,11 @@ import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2 }
 const Index = () => {
   const handleRegister = () => {
     // Replace with actual Google Form URL
-    window.open("https://forms.google.com", "_blank");
+    window.open("https://forms.gle/Pqm72wL7WAyN9aAY9", "_blank");
+  };
+
+  const handleViewGuide = () => {
+    window.open("https://drive.google.com/open?id=1YL9vzEUvpNclvzAN8i0A7GLiuCxrxFtZ&usp=drive_fs", "_blank");
   };
 
   return (
@@ -15,9 +19,9 @@ const Index = () => {
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-3 text-foreground">
-            <span className="font-semibold text-lg">Dinas Komunikasi dan Informatika Prov. Jawa Timur</span>
+            <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Prov. Jawa Timur" className="h-10" />
             <span className="text-muted-foreground">×</span>
-            <span className="font-semibold text-lg">Universitas Surabaya</span>
+            <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="h-10" />
           </div>
         </div>
       </div>
@@ -53,6 +57,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 variant="outline"
+                onClick={handleViewGuide}
                 className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10"
               >
                 Lihat Panduan
@@ -447,11 +452,6 @@ const Index = () => {
               >
                 Daftar Sekarang
               </Button>
-            </div>
-
-            <div className="pt-8 space-y-2">
-              <p className="text-white/80">Informasi lebih lanjut:</p>
-              <p className="text-white font-semibold">jycc.jatimprov.go.id</p>
             </div>
           </div>
         </div>
