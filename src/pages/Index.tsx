@@ -89,7 +89,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Calendar className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">24 Nov</p>
+                  <p className="text-2xl font-bold text-white">24 November 2025</p>
                   <p className="text-sm text-white/80">Grand Final</p>
                 </CardContent>
               </Card>
