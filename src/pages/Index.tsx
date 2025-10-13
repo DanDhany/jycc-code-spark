@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2 } from "lucide-react";
+import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star } from "lucide-react";
 
 const Index = () => {
   const handleRegister = () => {
@@ -68,7 +68,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
                   <Trophy className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">16 Juta</p>
+                  <p className="text-2xl font-bold text-white">Rp 18.000.000</p>
                   <p className="text-sm text-white/80">Total Hadiah</p>
                 </CardContent>
               </Card>
@@ -178,7 +178,7 @@ const Index = () => {
                   </div>
                   <div className="pt-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
-                    Deadline: 25 Oktober 2025
+                    Deadline: 30 Oktober 2025
                   </div>
                 </CardContent>
               </Card>
@@ -200,7 +200,7 @@ const Index = () => {
                   </div>
                   <div className="pt-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
-                    Deadline: 4 November 2025
+                    Deadline: 7 November 2025
                   </div>
                 </CardContent>
               </Card>
@@ -218,7 +218,7 @@ const Index = () => {
                   </p>
                   <div className="flex items-center gap-2 text-accent font-semibold">
                     <Trophy className="w-5 h-5" />
-                    <span>5 Kategori Pemenang</span>
+                    <span>6 Kategori Pemenang</span>
                   </div>
                   <div className="pt-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
@@ -238,7 +238,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">Hadiah</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Total Hadiah 16 Juta + Beasiswa Kuliah
+                Total Hadiah Rp 18.000.000 + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
                 Raih kesempatan beasiswa kuliah di Universitas Surabaya dengan potongan hingga 75%
@@ -263,7 +263,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-primary" />
-                      Beasiswa Ubaya
+                      Beasiswa Ubaya (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -286,7 +286,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-secondary" />
-                      Beasiswa Ubaya
+                      Beasiswa Ubaya (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -309,7 +309,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-accent" />
-                      Beasiswa Ubaya
+                      Beasiswa Ubaya (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -323,7 +323,7 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-lg mb-1">Juara Ide Terbaik</h4>
                     <p className="text-2xl font-bold text-primary">Rp 2.000.000</p>
-                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa</p>
+                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa (Up to 50%)</p>
                   </div>
                 </CardContent>
               </Card>
@@ -332,9 +332,20 @@ const Index = () => {
                 <CardContent className="p-6 flex items-center gap-4">
                   <Code className="w-10 h-10 text-secondary flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-lg mb-1">Juara Programming Terbaik</h4>
+                    <h4 className="font-bold text-lg mb-1">Juara Kemampuan Programming</h4>
                     <p className="text-2xl font-bold text-secondary">Rp 2.000.000</p>
-                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa</p>
+                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa (Up to 50%)</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-[var(--shadow-card)] border-accent/30 md:col-span-2">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <Star className="w-10 h-10 text-accent flex-shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-lg mb-1">Juara Favorit</h4>
+                    <p className="text-2xl font-bold text-accent">Rp 2.000.000</p>
+                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat</p>
                   </div>
                 </CardContent>
               </Card>
@@ -361,7 +372,7 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-primary mb-1">17 Oktober 2025</p>
+                    <p className="text-sm font-semibold text-primary mb-1">23 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Technical Meeting (Hybrid di Ubaya)</p>
                   </div>
                 </CardContent>
@@ -373,8 +384,8 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-secondary mb-1">25 Oktober 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Deadline Babak Penyisihan</p>
+                    <p className="text-sm font-semibold text-secondary mb-1">30 Oktober 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Babak Penyisihan</p>
                   </div>
                 </CardContent>
               </Card>
@@ -385,8 +396,8 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-primary mb-1">28 Oktober 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Pengumuman 30 Tim Lolos Penyisihan</p>
+                    <p className="text-sm font-semibold text-primary mb-1">31 Oktober 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim Lolos Semi Final</p>
                   </div>
                 </CardContent>
               </Card>
@@ -397,8 +408,8 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-secondary mb-1">4 November 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Deadline Babak Semi Final</p>
+                    <p className="text-sm font-semibold text-secondary mb-1">7 November 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Semifinalis</p>
                   </div>
                 </CardContent>
               </Card>
@@ -409,8 +420,8 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-primary mb-1">11 November 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Pengumuman 15 Tim Finalis</p>
+                    <p className="text-sm font-semibold text-primary mb-1">8 November 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim Lolos Final</p>
                   </div>
                 </CardContent>
               </Card>
