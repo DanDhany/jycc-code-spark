@@ -64,6 +64,12 @@ const Index = () => {
               </Button>
             </div>
 
+            <div className="flex justify-center animate-fade-in">
+              <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/20 text-white border border-destructive/40">
+                PENTING: Batas pendaftaran 22 Oktober 2025
+              </Badge>
+            </div>
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-3xl mx-auto">
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6 text-center">
@@ -366,6 +372,18 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
+              <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-destructive/20">
+                <CardContent className="p-6 flex items-center gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-8 h-8 text-destructive" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-destructive mb-1">22 Oktober 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Batas Akhir Pendaftaran (sebelum Technical Meeting)</p>
+                  </div>
+                </CardContent>
+              </Card>
+
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
