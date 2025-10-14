@@ -81,7 +81,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-4 text-center">
                   <Users className="w-7 h-7 mx-auto mb-2 text-accent" />
-                  <p className="text-xl font-bold text-white">4-5</p>
+                  <p className="text-xl font-bold text-white">5</p>
                   <p className="text-xs text-white/80">Anggota Tim</p>
                 </CardContent>
               </Card>
@@ -89,7 +89,7 @@ const Index = () => {
                 <CardContent className="p-4 text-center">
                   <Award className="w-7 h-7 mx-auto mb-2 text-accent" />
                   <p className="text-xl font-bold text-white">Beasiswa</p>
-                  <p className="text-xs text-white/80">Kuliah di Ubaya</p>
+                  <p className="text-xs text-white/80 leading-tight">Kuliah di Ubaya<br/>(Sistem Informasi)</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
@@ -247,7 +247,7 @@ const Index = () => {
                 Total Hadiah Senilai 18 Juta + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
-                Raih kesempatan beasiswa kuliah di Universitas Surabaya dengan potongan hingga 75%
+                Raih kesempatan beasiswa kuliah di Universitas Surabaya (Sistem Informasi) dengan potongan hingga 75%
               </p>
             </div>
 
@@ -269,7 +269,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-primary" />
-                      Beasiswa Ubaya (Up to 75%)
+                      Beasiswa Ubaya - Sistem Informasi (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -292,7 +292,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-secondary" />
-                      Beasiswa Ubaya (Up to 75%)
+                      Beasiswa Ubaya - Sistem Informasi (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -315,7 +315,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-accent" />
-                      Beasiswa Ubaya (Up to 75%)
+                      Beasiswa Ubaya - Sistem Informasi (Up to 75%)
                     </li>
                   </ul>
                 </CardContent>
@@ -329,7 +329,7 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-lg mb-1">Juara Ide Terbaik</h4>
                     <p className="text-2xl font-bold text-primary">Rp 2.000.000</p>
-                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa (Up to 50%)</p>
+                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa Sistem Informasi (Up to 50%)</p>
                   </div>
                 </CardContent>
               </Card>
@@ -340,7 +340,7 @@ const Index = () => {
                   <div>
                     <h4 className="font-bold text-lg mb-1">Juara Kemampuan Programming</h4>
                     <p className="text-2xl font-bold text-secondary">Rp 2.000.000</p>
-                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa (Up to 50%)</p>
+                    <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat + Beasiswa Sistem Informasi (Up to 50%)</p>
                   </div>
                 </CardContent>
               </Card>
