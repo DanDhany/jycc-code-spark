@@ -72,31 +72,31 @@ const Index = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-3xl mx-auto">
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6 text-center">
-                  <Trophy className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">18 Juta</p>
-                  <p className="text-sm text-white/80">Total Hadiah</p>
+                <CardContent className="p-4 text-center">
+                  <Trophy className="w-7 h-7 mx-auto mb-2 text-accent" />
+                  <p className="text-xl font-bold text-white">18 Juta</p>
+                  <p className="text-xs text-white/80">Total Hadiah</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6 text-center">
-                  <Users className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">4-5</p>
-                  <p className="text-sm text-white/80">Anggota Tim</p>
+                <CardContent className="p-4 text-center">
+                  <Users className="w-7 h-7 mx-auto mb-2 text-accent" />
+                  <p className="text-xl font-bold text-white">4-5</p>
+                  <p className="text-xs text-white/80">Anggota Tim</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6 text-center">
-                  <Award className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-2xl font-bold text-white">Beasiswa</p>
-                  <p className="text-sm text-white/80">Kuliah di Ubaya</p>
+                <CardContent className="p-4 text-center">
+                  <Award className="w-7 h-7 mx-auto mb-2 text-accent" />
+                  <p className="text-xl font-bold text-white">Beasiswa</p>
+                  <p className="text-xs text-white/80">Kuliah di Ubaya</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6 text-center">
-                  <Calendar className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-xl md:text-2xl font-bold text-white whitespace-nowrap">24 November 2025</p>
-                  <p className="text-sm text-white/80">Grand Final</p>
+                <CardContent className="p-4 text-center">
+                  <Calendar className="w-7 h-7 mx-auto mb-2 text-accent" />
+                  <p className="text-base font-bold text-white leading-tight">24 November<br/>2025</p>
+                  <p className="text-xs text-white/80 mt-1">Grand Final</p>
                 </CardContent>
               </Card>
             </div>
