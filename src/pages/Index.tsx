@@ -77,8 +77,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-4 text-center">
                   <Trophy className="w-7 h-7 mx-auto mb-2 text-accent" />
-                  <p className="text-xl font-bold text-white">18 Juta</p>
-                  <p className="text-xs text-white/80">Total Hadiah</p>
+                  <p className="text-xl font-bold text-white">Total Hadiah Ratusan Juta</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
@@ -236,7 +235,7 @@ const Index = () => {
                 <CardContent className="p-8 pt-12 space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">Pendaftaran</h3>
                   <p className="text-muted-foreground">
-                    Kirimkan data tim anda dan konsep awal solusi aplikasi berupa uraian teks yang menjelaskan latar belakang, permasalahan, dan usulan solusi.
+                    Kirimkan data tim anda dan solusi aplikasi berupa proposal yang menjelaskan latar belakang, permasalahan, dan usulan solusi.
                   </p>
                   <div className="flex items-center gap-2 text-primary font-semibold">
                     <CheckCircle2 className="w-5 h-5" />
@@ -304,7 +303,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">Hadiah</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Total Hadiah Senilai 18 Juta + Beasiswa Kuliah
+                Total Hadiah Senilai Ratusan Juta + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
                 Raih kesempatan beasiswa kuliah di Universitas Surabaya (Sistem Informasi) dengan potongan hingga 75%
