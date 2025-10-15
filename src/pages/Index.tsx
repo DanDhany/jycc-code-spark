@@ -69,7 +69,7 @@ const Index = () => {
 
             <div className="flex justify-center animate-fade-in">
               <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/30 text-white border border-destructive/40 ring-1 ring-destructive/50 shadow-sm shadow-destructive/20 animate-pulse">
-                PENTING: Batas pendaftaran 30 Oktober 2025
+                PENTING: Batas pendaftaran 29 Oktober 2025
               </Badge>
             </div>
 
@@ -77,7 +77,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-4 text-center">
                   <Trophy className="w-7 h-7 mx-auto mb-2 text-accent" />
-                  <p className="text-xl font-bold text-white">Total Hadiah Ratusan Juta</p>
+                  <p className="text-xl font-bold text-white">Total Hadiah Senilai 22 Juta</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
@@ -242,7 +242,7 @@ const Index = () => {
                   </div>
                   <div className="pt-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
-                    Deadline: 30 Oktober 2025
+                    Deadline: 29 Oktober 2025
                   </div>
                 </CardContent>
               </Card>
@@ -282,7 +282,7 @@ const Index = () => {
                   </p>
                   <div className="flex items-center gap-2 text-accent font-semibold">
                     <Trophy className="w-5 h-5" />
-                    <span>6 Kategori Pemenang</span>
+                    <span>5 Kategori Pemenang</span>
                   </div>
                   <div className="pt-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
@@ -302,7 +302,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">Hadiah</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Total Hadiah Senilai Ratusan Juta + Beasiswa Kuliah
+                Total Hadiah Senilai 22 Juta + Beasiswa Kuliah
               </h2>
               <p className="text-lg text-muted-foreground">
                 Raih kesempatan beasiswa kuliah di Universitas Surabaya (Sistem Informasi) dengan potongan hingga 75%
@@ -403,7 +403,7 @@ const Index = () => {
                 </CardContent>
               </Card>
               
-              <Card className="shadow-[var(--shadow-card)] border-accent/30 md:col-span-2">
+              {/* <Card className="shadow-[var(--shadow-card)] border-accent/30 md:col-span-2">
                 <CardContent className="p-6 flex items-center gap-4">
                   <Star className="w-10 h-10 text-accent flex-shrink-0" />
                   <div>
@@ -412,7 +412,7 @@ const Index = () => {
                     <p className="text-sm text-muted-foreground">+ Trophy + Sertifikat</p>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
@@ -450,7 +450,7 @@ const Index = () => {
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-secondary mb-1">30 Oktober 2025</p>
+                    <p className="text-sm font-semibold text-secondary mb-1">29 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Babak Penyisihan</p>
                   </div>
                 </CardContent>
