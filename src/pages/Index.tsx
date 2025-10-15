@@ -19,9 +19,12 @@ const Index = () => {
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-6 text-foreground">
+            {/* Urutan: Ubaya, Gerbang, Jatim (Pemprov), Kominfo, SI Ubaya */}
+            <img src="/Logo Ubaya.png" alt="Universitas Surabaya (UBAYA)" className="h-12 object-contain" />
+            <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-12 object-contain" />
             <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="h-12 object-contain" />
-            <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Prov. Jawa Timur" className="h-12 object-contain" />
-            <img src="/Universitas-surabaya.png" alt="Universitas Surabaya" className="h-12 object-contain" />
+            <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-12 object-contain" />
+            <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-12 object-contain" />
           </div>
         </div>
       </div>
@@ -66,7 +69,7 @@ const Index = () => {
 
             <div className="flex justify-center animate-fade-in">
               <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/30 text-white border border-destructive/40 ring-1 ring-destructive/50 shadow-sm shadow-destructive/20 animate-pulse">
-                PENTING: Batas pendaftaran 22 Oktober 2025
+                PENTING: Batas pendaftaran 30 Oktober 2025
               </Badge>
             </div>
 
@@ -88,8 +91,7 @@ const Index = () => {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-4 text-center">
                   <Award className="w-7 h-7 mx-auto mb-2 text-accent" />
-                  <p className="text-xl font-bold text-white">Beasiswa</p>
-                  <p className="text-xs text-white/80 leading-tight">Kuliah di Ubaya<br/>(Sistem Informasi)</p>
+                  <p className="text-xl font-bold text-white">Beasiswa Senilai Ratusan Juta</p>
                 </CardContent>
               </Card>
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
@@ -372,30 +374,20 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-destructive/20">
-                <CardContent className="p-6 flex items-center gap-6">
-                  <div className="w-16 h-16 rounded-xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                    <Calendar className="w-8 h-8 text-destructive" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-semibold text-destructive mb-1">22 Oktober 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Batas Akhir Pendaftaran (sebelum Technical Meeting)</p>
-                  </div>
-                </CardContent>
-              </Card>
-
+              {/* Technical Meeting */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-primary mb-1">23 Oktober 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Technical Meeting (Hybrid di Ubaya)</p>
+                    <p className="text-sm font-semibold text-primary mb-1">25 Oktober 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Technical Meeting</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Batas Pengumpulan Penyisihan */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
@@ -408,6 +400,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
+              {/* Pengumuman Semifinalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -415,11 +408,12 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-primary mb-1">31 Oktober 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim Lolos Semi Final</p>
+                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Semi Final</p>
                   </div>
                 </CardContent>
               </Card>
 
+              {/* Batas Pengumpulan Semifinalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
@@ -432,6 +426,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
+              {/* Pengumuman Finalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
                 <CardContent className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -439,7 +434,20 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-primary mb-1">8 November 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim Lolos Final</p>
+                    <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Final</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Batas Pengumpulan Karya Finalis */}
+              <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
+                <CardContent className="p-6 flex items-center gap-6">
+                  <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-8 h-8 text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-secondary mb-1">21 November 2025</p>
+                    <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Finalis</p>
                   </div>
                 </CardContent>
               </Card>
@@ -451,7 +459,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-accent mb-1">24 November 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Grand Final di Universitas Surabaya</p>
+                    <p className="text-lg font-semibold text-foreground">Final dan Penyerahan Hadiah</p>
                   </div>
                 </CardContent>
               </Card>
