@@ -157,6 +157,64 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Themes Section */}
+      <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <Badge className="mb-3 bg-primary/10 text-primary border-primary/20">Tema yang Diangkat</Badge>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Tema Kompetisi</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Pilihan tema dari solusi yang dapat dikembangkan, meliputi beberapa tema terkait SDG, berikut ini:
+              </p>
+            </div>
+
+            <Card className="shadow-[var(--shadow-card)] border-primary/10">
+              <CardContent className="p-0">
+                <div className="rounded-lg overflow-hidden border border-border/60">
+                  {/* Row 1 */}
+                  <div className="grid md:grid-cols-[1fr_2fr]">
+                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
+                      Inclusive Digital Economy
+                    </div>
+                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
+                      Aplikasi untuk pemberdayaan masyarakat inklusif, UMKM, dan disabilitas
+                    </div>
+                  </div>
+                  {/* Row 2 */}
+                  <div className="grid md:grid-cols-[1fr_2fr]">
+                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
+                      HealthTech for Resilience
+                    </div>
+                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
+                      Aplikasi kesehatan untuk masyarakat tangguh
+                    </div>
+                  </div>
+                  {/* Row 3 */}
+                  <div className="grid md:grid-cols-[1fr_2fr]">
+                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
+                      Creative Economy & Smart Tourism
+                    </div>
+                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
+                      Aplikasi untuk memperkuat pariwisata cerdas dan ekonomi kreatif Jatim
+                    </div>
+                  </div>
+                  {/* Row 4 */}
+                  <div className="grid md:grid-cols-[1fr_2fr]">
+                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground">
+                      Smart City & Village Solutions
+                    </div>
+                    <div className="p-4 md:p-5 text-foreground/80">
+                      Aplikasi tata kelola kota dan desa berkelanjutan
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Competition Stages */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
