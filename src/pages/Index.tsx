@@ -18,26 +18,13 @@ const Index = () => {
       {/* Header Organizer */}
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
-          {/* Grid 3 kolom untuk memastikan logo Jatim tepat di tengah layar */}
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center text-foreground">
-            {/* Kiri (rapat dan proporsional) */}
-            <div className="flex items-center justify-end gap-6">
-              <img src="/BALIHO HARJAD JATIM.png" alt="Hari Jadi Jatim 80 Tahun" className="h-10 md:h-12 object-contain" />
-              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-10 md:h-12 object-contain" />
-              
-            </div>
-
-            {/* Tengah - jangkar */}
-            <div className="flex items-center justify-center">
-              <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="h-10 md:h-12 object-contain mx-8 md:mx-10" />
-            </div>
-
-            {/* Kanan (rapat dan proporsional) */}
-            <div className="flex items-center justify-start gap-6">
-              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-10 md:h-12 object-contain" />
-              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-10 md:h-12 object-contain" />
-              <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-10 md:h-12 object-contain" />
-            </div>
+          <div className="flex items-center justify-center gap-6 text-foreground">
+             <img src="/BALIHO HARJAD JATIM.png" alt="Hari Jadi Jatim 80 Tahun" className="h-12 object-contain" />
+              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-12 object-contain" />
+              <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className=":h-12 object-contain" />
+              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className=":h-12 object-contain" />
+              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-12 object-contain" />
+              <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-12 object-contain" />
           </div>
         </div>
       </div>
