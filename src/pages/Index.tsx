@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star } from "lucide-react";
+import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
 
 const Index = () => {
   const handleRegister = () => {
@@ -22,8 +22,9 @@ const Index = () => {
           <div className="grid grid-cols-[1fr_auto_1fr] items-center text-foreground">
             {/* Kiri (rapat dan proporsional) */}
             <div className="flex items-center justify-end gap-6">
-              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-10 md:h-12 object-contain" />
-              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-10 md:h-12 object-contain" />
+              <img src="/BALIHO HARJAD JATIM.png" alt="Hari Jadi Jatim 80 Tahun" className="h-10 md:h-12 object-contain" />
+              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-10 md:h-12 object-contain" />
+              
             </div>
 
             {/* Tengah - jangkar */}
@@ -33,7 +34,8 @@ const Index = () => {
 
             {/* Kanan (rapat dan proporsional) */}
             <div className="flex items-center justify-start gap-6">
-              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-10 md:h-12 object-contain" />
+              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-10 md:h-12 object-contain" />
+              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-10 md:h-12 object-contain" />
               <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-10 md:h-12 object-contain" />
             </div>
           </div>
@@ -179,48 +181,47 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="shadow-[var(--shadow-card)] border-primary/10">
-              <CardContent className="p-0">
-                <div className="rounded-lg overflow-hidden border border-border/60">
-                  {/* Row 1 */}
-                  <div className="grid md:grid-cols-[1fr_2fr]">
-                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
-                      Inclusive Digital Economy
-                    </div>
-                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
-                      Aplikasi untuk pemberdayaan masyarakat inklusif, UMKM, dan disabilitas
-                    </div>
-                  </div>
-                  {/* Row 2 */}
-                  <div className="grid md:grid-cols-[1fr_2fr]">
-                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
-                      HealthTech for Resilience
-                    </div>
-                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
-                      Aplikasi kesehatan untuk masyarakat tangguh
-                    </div>
-                  </div>
-                  {/* Row 3 */}
-                  <div className="grid md:grid-cols-[1fr_2fr]">
-                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground border-b border-border/60">
-                      Creative Economy & Smart Tourism
-                    </div>
-                    <div className="p-4 md:p-5 text-foreground/80 border-b border-border/60">
-                      Aplikasi untuk memperkuat pariwisata cerdas dan ekonomi kreatif Jatim
-                    </div>
-                  </div>
-                  {/* Row 4 */}
-                  <div className="grid md:grid-cols-[1fr_2fr]">
-                    <div className="p-4 md:p-5 bg-card/70 font-semibold italic text-foreground">
-                      Smart City & Village Solutions
-                    </div>
-                    <div className="p-4 md:p-5 text-foreground/80">
-                      Aplikasi tata kelola kota dan desa berkelanjutan
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Inclusive Digital Economy */}
+              <Card className="relative overflow-hidden shadow-[var(--shadow-card)] border-primary/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16" />
+                <CardContent className="p-8 space-y-3 relative">
+                  <Target className="w-10 h-10 text-primary" />
+                  <h3 className="text-xl font-bold text-foreground italic">Inclusive Digital Economy</h3>
+                  <p className="text-muted-foreground">Aplikasi untuk pemberdayaan masyarakat inklusif, UMKM, dan disabilitas</p>
+                </CardContent>
+              </Card>
+
+              {/* HealthTech for Resilience */}
+              <Card className="relative overflow-hidden shadow-[var(--shadow-card)] border-secondary/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -mr-16 -mt-16" />
+                <CardContent className="p-8 space-y-3 relative">
+                  <HeartPulse className="w-10 h-10 text-secondary" />
+                  <h3 className="text-xl font-bold text-foreground italic">HealthTech for Resilience</h3>
+                  <p className="text-muted-foreground">Aplikasi kesehatan untuk masyarakat tangguh</p>
+                </CardContent>
+              </Card>
+
+              {/* Creative Economy & Smart Tourism */}
+              <Card className="relative overflow-hidden shadow-[var(--shadow-card)] border-accent/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16" />
+                <CardContent className="p-8 space-y-3 relative">
+                  <Lightbulb className="w-10 h-10 text-accent" />
+                  <h3 className="text-xl font-bold text-foreground italic">Creative Economy & Smart Tourism</h3>
+                  <p className="text-muted-foreground">Aplikasi untuk memperkuat pariwisata cerdas dan ekonomi kreatif Jatim</p>
+                </CardContent>
+              </Card>
+
+              {/* Smart City & Village Solutions */}
+              <Card className="relative overflow-hidden shadow-[var(--shadow-card)] border-muted-foreground/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-muted/20 rounded-full -mr-16 -mt-16" />
+                <CardContent className="p-8 space-y-3 relative">
+                  <Code className="w-10 h-10 text-muted-foreground" />
+                  <h3 className="text-xl font-bold text-foreground italic">Smart City & Village Solutions</h3>
+                  <p className="text-muted-foreground">Aplikasi tata kelola kota dan desa berkelanjutan</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
