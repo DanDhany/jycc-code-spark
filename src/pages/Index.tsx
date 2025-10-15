@@ -176,9 +176,9 @@ const Index = () => {
                   </div>
                 </div>
                 <CardContent className="p-8 pt-12 space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground">Penyisihan</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Pendaftaran</h3>
                   <p className="text-muted-foreground">
-                    Kirimkan konsep solusi aplikasi berupa uraian teks yang menjelaskan latar belakang, permasalahan, dan usulan solusi.
+                    Kirimkan data tim anda dan konsep awal solusi aplikasi berupa uraian teks yang menjelaskan latar belakang, permasalahan, dan usulan solusi.
                   </p>
                   <div className="flex items-center gap-2 text-primary font-semibold">
                     <CheckCircle2 className="w-5 h-5" />
@@ -222,7 +222,7 @@ const Index = () => {
                 <CardContent className="p-8 pt-12 space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">Final</h3>
                   <p className="text-muted-foreground">
-                    Bangun aplikasi lengkap, hadapi tantangan live coding, dan presentasikan solusi di hadapan juri di Ubaya.
+                    Bangun prototype dari solusi yang usulkan dan presentasikan hasilnya di hadapan juri di Ubaya.
                   </p>
                   <div className="flex items-center gap-2 text-accent font-semibold">
                     <Trophy className="w-5 h-5" />
@@ -259,7 +259,7 @@ const Index = () => {
                 <CardContent className="p-8 space-y-4 relative">
                   <Trophy className="w-12 h-12 text-primary mb-2" />
                   <h3 className="text-2xl font-bold text-foreground">Juara 1</h3>
-                  <p className="text-3xl font-bold text-primary">Rp 5.000.000</p>
+                  <p className="text-3xl font-bold text-primary">Rp 7.500.000</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-primary" />
@@ -282,7 +282,7 @@ const Index = () => {
                 <CardContent className="p-8 space-y-4 relative">
                   <Trophy className="w-12 h-12 text-secondary mb-2" />
                   <h3 className="text-2xl font-bold text-foreground">Juara 2</h3>
-                  <p className="text-3xl font-bold text-secondary">Rp 4.000.000</p>
+                  <p className="text-3xl font-bold text-secondary">Rp 6.000.000</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-secondary" />
@@ -305,7 +305,7 @@ const Index = () => {
                 <CardContent className="p-8 space-y-4 relative">
                   <Trophy className="w-12 h-12 text-accent mb-2" />
                   <h3 className="text-2xl font-bold text-foreground">Juara 3</h3>
-                  <p className="text-3xl font-bold text-accent">Rp 3.000.000</p>
+                  <p className="text-3xl font-bold text-accent">Rp 4.500.000</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-accent" />
