@@ -256,7 +256,7 @@ const Index = () => {
                 <CardContent className="p-8 pt-12 space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">Semi Final</h3>
                   <p className="text-muted-foreground">
-                    Buat proposal lengkap dengan deskripsi sistem, fitur-fitur yang akan dikembangkan, dan desain UI/UX.
+                    Buat proposal lengkap dengan deskripsi sistem, dan fitur-fitur yang akan dikembangkan dalam bentuk screenshot UI dan penjelasan UX.
                   </p>
                   <div className="flex items-center gap-2 text-secondary font-semibold">
                     <CheckCircle2 className="w-5 h-5" />
@@ -278,7 +278,7 @@ const Index = () => {
                 <CardContent className="p-8 pt-12 space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">Final</h3>
                   <p className="text-muted-foreground">
-                    Bangun prototype dari solusi yang usulkan dan presentasikan hasilnya di hadapan juri di Ubaya.
+                    Bangun prototype dari solusi yang usulkan, lalu fitur dari aplikasi akan diubah menjadi coding dan presentasikan hasilnya di hadapan juri di Ubaya.
                   </p>
                   <div className="flex items-center gap-2 text-accent font-semibold">
                     <Trophy className="w-5 h-5" />
