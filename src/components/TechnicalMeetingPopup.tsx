@@ -58,7 +58,7 @@ const TechnicalMeetingPopup = () => {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline break-words"
                 >
-                  https://s.id/tmJYCC
+                  https://s.id/KonfirmasiLuringJYCC
                 </a></p>
                 <p className="text-foreground">SGFBE Kampus Ubaya Tenggilis</p>
                 <p className="text-foreground text-sm">Jl. Raya Kalirungkut, Surabaya</p>
