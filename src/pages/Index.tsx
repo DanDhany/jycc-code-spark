@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
+import TechnicalMeetingPopup from "@/components/TechnicalMeetingPopup";
 
 const Index = () => {
   const handleRegister = () => {
@@ -609,6 +610,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      {/* Technical Meeting Popup */}
+      <TechnicalMeetingPopup />
     </div>
   );
 };
