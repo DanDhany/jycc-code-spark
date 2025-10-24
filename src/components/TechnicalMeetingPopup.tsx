@@ -51,7 +51,7 @@ const TechnicalMeetingPopup = () => {
                 <p className="text-foreground">Passcode: 928679</p>
               </div>
 
-              <div>
+              {/* <div>
                 <h4 className="font-medium text-foreground">Luring (Hadir Ke Lokasi):</h4>
                 <p className="text-foreground">Link Konfirmasi Kehadiran Luring <a
                   href="https://s.id/KonfirmasiLuringJYCC"
@@ -75,7 +75,7 @@ const TechnicalMeetingPopup = () => {
                     className="w-40 h-40 object-contain"
                   />
                 </div>
-              </div>
+              </div> */}
               
               
             </div>
