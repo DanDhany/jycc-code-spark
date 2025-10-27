@@ -1,0 +1,10 @@
+services:
+  # Ini adalah satu-satunya service yang Anda butuhkan di produksi
+  jycc-landing:
+    build: .
+    ports:
+      - "8100:80" # Port 80 adalah Nginx di dalam kontainer
+    restart: unless-stopped
+    image: jycc-landing-prod # Beri nama image agar mudah dikelola
+
+# Volume 'node_modules' tidak diperlukan lagi karena tidak ada service 'dev'

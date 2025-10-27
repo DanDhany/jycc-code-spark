@@ -14,6 +14,7 @@ const Index = () => {
     window.open("https://drive.google.com/open?id=1YL9vzEUvpNclvzAN8i0A7GLiuCxrxFtZ&usp=drive_fs", "_blank");
   };
 
+  const hasilTmUrl = "https://s.id/HasilTMjycc";
   return (
     <div className="min-h-screen bg-background">
       {/* Header Organizer */}
@@ -441,6 +442,13 @@ const Index = () => {
                     <p className="text-sm font-semibold text-primary mb-1">25 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Technical Meeting</p>
                   </div>
+                  <Button
+                    variant="outline"
+                    onClick={() => window.open(hasilTmUrl, "_blank")}
+                    className="whitespace-nowrap"
+                  >
+                    Buka Hasil TM
+                  </Button>
                 </CardContent>
               </Card>
 
