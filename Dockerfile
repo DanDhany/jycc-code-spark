@@ -12,7 +12,7 @@ COPY bun.lockb ./
 # Install dependensi
 # Langkah ini HANYA akan berjalan jika package.json atau bun.lockb berubah
 RUN npm install -g bun
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # SETELAH install, baru copy sisa kode sumber
 # Jika hanya kode di 'src' yang berubah, Docker akan mulai dari sini
