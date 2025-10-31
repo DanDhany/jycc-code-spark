@@ -42,8 +42,14 @@ const Index = () => {
     }
   };
   useEffect(() => {
-    // Popup awal: tampilkan flyer hasil semifinal
-    const t = setTimeout(() => setSemifinalOpen(true), 800);
+    // Popup awal: jika rule final terpenuhi, tampilkan hasil final; jika belum, tampilkan hasil semifinal
+    const t = setTimeout(() => {
+      if (new Date() >= finalAnnouncementDate) {
+        setFinalOpen(true);
+      } else {
+        setSemifinalOpen(true);
+      }
+    }, 800);
     return () => clearTimeout(t);
   }, []);
   return (
@@ -561,13 +567,15 @@ const Index = () => {
                     <p className="text-sm font-semibold text-primary mb-1">8 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Final</p>
                   </div>
-                  <Button
-                    variant="outline"
-                    onClick={handleOpenFinal}
-                    className="whitespace-nowrap"
-                  >
-                    Buka Hasil Final
-                  </Button>
+                  {canShowFinalActions && (
+                    <Button
+                      variant="outline"
+                      onClick={handleOpenFinal}
+                      className="whitespace-nowrap"
+                    >
+                      Buka Hasil Final
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
 
