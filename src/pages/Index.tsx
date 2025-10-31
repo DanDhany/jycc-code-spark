@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
-import TechnicalMeetingPopup from "@/components/TechnicalMeetingPopup";
+import SemifinalResultPopup from "@/components/SemifinalResultPopup";
+import { useEffect, useState } from "react";
 
 const Index = () => {
   const handleRegister = () => {
@@ -15,6 +16,12 @@ const Index = () => {
   };
 
   const hasilTmUrl = "https://s.id/HasilTMjycc";
+  const [semifinalOpen, setSemifinalOpen] = useState(false);
+  useEffect(() => {
+    // Popup awal: tampilkan flyer hasil semifinal
+    const t = setTimeout(() => setSemifinalOpen(true), 800);
+    return () => clearTimeout(t);
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       {/* Header Organizer */}
@@ -475,6 +482,13 @@ const Index = () => {
                     <p className="text-sm font-semibold text-primary mb-1">31 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Semi Final</p>
                   </div>
+                  <Button
+                    variant="outline"
+                    onClick={() => setSemifinalOpen(true)}
+                    className="whitespace-nowrap"
+                  >
+                    Tampilkan Hasil Semifinal
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -619,8 +633,8 @@ const Index = () => {
         </div>
       </footer>
       
-      {/* Technical Meeting Popup */}
-      <TechnicalMeetingPopup />
+      {/* Semifinal Result Popup */}
+      <SemifinalResultPopup open={semifinalOpen} onOpenChange={setSemifinalOpen} />
     </div>
   );
 };
