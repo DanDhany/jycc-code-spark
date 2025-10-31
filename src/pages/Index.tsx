@@ -554,6 +554,13 @@ const Index = () => {
                     <p className="text-sm font-semibold text-secondary mb-1">7 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Semifinalis</p>
                   </div>
+                  <Button
+                    variant="outline"
+                    onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}
+                    className="whitespace-nowrap"
+                  >
+                    Template Semifinal
+                  </Button>
                 </CardContent>
               </Card>
 

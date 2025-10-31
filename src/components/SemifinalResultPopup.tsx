@@ -83,7 +83,7 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
             jika hasil masih belum muncul atau tidak termuat, harap gunakan tombol Lihat Versi Asli dibawah
           </p>
           <div className="mt-2 flex justify-center gap-3">
-            <Button onClick={() => window.open("https://s.id/G5ZYf", "_blank")}>Lihat Versi Asli</Button>
+            <Button onClick={() => window.open("https://drive.google.com/file/d/1ZuVWikJwqKmc3XxmUxL09vgxgV4h7Sdu/view?usp=drive_link", "_blank")}>Lihat Versi Asli</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
         </div>
