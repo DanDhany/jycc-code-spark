@@ -1,5 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 type SemifinalResultPopupProps = {
   open: boolean;
@@ -7,6 +8,8 @@ type SemifinalResultPopupProps = {
 };
 
 const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps) => {
+  const [imgSrc, setImgSrc] = useState("https://s.id/G5ZYf");
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-3xl w-[95%] sm:w-[90%] md:w-[80%] rounded-lg p-0 overflow-hidden">
@@ -18,11 +21,14 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
 
         <div className="px-4 pb-4">
           <img
-            src="/hasil_semifinal.png"
+            src={imgSrc}
             alt="Flyer Hasil Semifinal JYCC"
             className="w-[65%] h-auto mx-auto rounded-md border"
+            referrerPolicy="no-referrer"
+            onError={() => setImgSrc("/hasil_semifinal.png")}
           />
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex justify-center gap-3">
+            <Button onClick={() => window.open("https://s.id/G5ZYf", "_blank")}>Lihat Versi Asli</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
         </div>
