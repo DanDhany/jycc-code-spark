@@ -31,8 +31,8 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl w-[95%] sm:w-[90%] md:w-[80%] rounded-lg p-0 overflow-hidden">
-        <DialogHeader className="p-4">
+      <DialogContent className="max-w-xl w-[95%] sm:w-[90%] md:w-[80%] rounded-lg p-0 overflow-y-auto max-h-[90vh]">
+        <DialogHeader className="p-4 sticky top-0 bg-background/80 backdrop-blur-sm z-10">
           <DialogTitle className="text-xl md:text-2xl font-bold text-center">
             Hasil Semifinal JYCC
           </DialogTitle>
@@ -43,7 +43,7 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
             Selamat kepada tim yang lolos ke babak Semi Final!
           </Badge>
           {/* Carousel Container */}
-          <div className="relative w-[45%] mx-auto">
+          <div className="relative w-full max-w-[440px] mx-auto">
             <img
               src={images[currentIndex]}
               alt={`Hasil Semifinal JYCC - Gambar ${currentIndex + 1}`}
@@ -102,7 +102,7 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
           <p className="mt-3 text-center text-red-600 text-sm">
             jika hasil masih belum muncul atau tidak termuat, harap gunakan tombol Lihat Versi Asli dibawah
           </p>
-          <div className="mt-2 flex justify-center gap-3">
+          <div className="sticky bottom-0 bg-background/80 backdrop-blur-sm mt-2 px-4 py-2 flex justify-center gap-3">
             <Button onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}>Template Semifinal</Button>
             <Button onClick={() => window.open("https://drive.google.com/file/d/1ZuVWikJwqKmc3XxmUxL09vgxgV4h7Sdu/view?usp=drive_link", "_blank")}>Lihat Versi Asli</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
