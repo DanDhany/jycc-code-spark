@@ -23,11 +23,14 @@ const FinalResultPopup = ({ open, onOpenChange }: FinalResultPopupProps) => {
           <img
             src={imgSrc}
             alt="Flyer Hasil Final JYCC"
-            className="w-[65%] h-auto mx-auto rounded-md border"
+            className="w-[45%] h-auto mx-auto rounded-md border"
             referrerPolicy="no-referrer"
             onError={() => setImgSrc("/hasil_final.png")}
           />
-          <div className="mt-4 flex justify-center gap-3">
+          <p className="mt-3 text-center text-red-600 text-sm">
+            jika hasil masih belum muncul atau tidak termuat, harap gunakan tombol Lihat Versi Asli dibawah
+          </p>
+          <div className="mt-2 flex justify-center gap-3">
             <Button onClick={() => window.open("https://s.id/GJrp7", "_blank")}>Lihat Versi Asli</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
