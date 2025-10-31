@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
 import SemifinalResultPopup from "@/components/SemifinalResultPopup";
 import FinalResultPopup from "@/components/FinalResultPopup";
+import FinalLocationPopup from "@/components/FinalLocationPopup";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useEffect, useState } from "react";
 
@@ -20,14 +21,24 @@ const Index = () => {
   const hasilTmUrl = "https://s.id/HasilTMjycc";
   const [semifinalOpen, setSemifinalOpen] = useState(false);
   const [finalOpen, setFinalOpen] = useState(false);
+  const [finalLocationOpen, setFinalLocationOpen] = useState(false);
   const [preFinalInfoOpen, setPreFinalInfoOpen] = useState(false);
   const finalAnnouncementDate = new Date(2025, 10, 8, 0, 0, 0); // 8 Nov 2025 local time
+  const canShowFinalActions = new Date() >= finalAnnouncementDate;
   const handleOpenFinal = () => {
     const now = new Date();
     if (now < finalAnnouncementDate) {
       setPreFinalInfoOpen(true);
     } else {
       setFinalOpen(true);
+    }
+  };
+  const handleOpenFinalLocation = () => {
+    const now = new Date();
+    if (now < finalAnnouncementDate) {
+      setPreFinalInfoOpen(true);
+    } else {
+      setFinalLocationOpen(true);
     }
   };
   useEffect(() => {
@@ -99,6 +110,16 @@ const Index = () => {
               >
                 Lihat Panduan
               </Button>
+              {canShowFinalActions && (
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  onClick={handleOpenFinalLocation}
+                  className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10"
+                >
+                  Lihat Lokasi Final
+                </Button>
+              )}
             </div>
 
             <div className="flex justify-center animate-fade-in">
@@ -572,6 +593,15 @@ const Index = () => {
                     <p className="text-sm font-semibold text-accent mb-1">24 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Final dan Penyerahan Hadiah</p>
                   </div>
+                  {canShowFinalActions && (
+                    <Button
+                      variant="outline"
+                      onClick={handleOpenFinalLocation}
+                      className="whitespace-nowrap"
+                    >
+                      Lihat Lokasi Final
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             </div>
@@ -669,6 +699,8 @@ const Index = () => {
       <SemifinalResultPopup open={semifinalOpen} onOpenChange={setSemifinalOpen} />
       {/* Final Result Popup */}
       <FinalResultPopup open={finalOpen} onOpenChange={setFinalOpen} />
+      {/* Final Location Popup */}
+      <FinalLocationPopup open={finalLocationOpen} onOpenChange={setFinalLocationOpen} />
       {/* Pre-Final Info Popup */}
       <Dialog open={preFinalInfoOpen} onOpenChange={setPreFinalInfoOpen}>
         <DialogContent className="max-w-md">
