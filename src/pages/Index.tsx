@@ -59,12 +59,24 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 animate-fade-in">
-              <Button 
+              {/* <Button 
                 size="lg"
                 onClick={handleRegister}
                 className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
                 Daftar Sekarang
+              </Button> */}
+              <Button 
+                size="lg"
+                onClick={() => {
+                  const timelineSection = document.getElementById("timeline");
+                  if (timelineSection) {
+                    timelineSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              >
+                Lihat Timeline
               </Button>
               <Button 
                 size="lg"
@@ -428,7 +440,7 @@ const Index = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-muted/30">
+      <section id="timeline" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -548,7 +560,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary relative overflow-hidden">
+      {/* <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
         
         <div className="container mx-auto px-4 relative">
@@ -571,7 +583,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Partners & Sponsors Section */}
       <section className="py-16 bg-card border-t border-border">
