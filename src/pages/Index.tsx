@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
 import SemifinalResultPopup from "@/components/SemifinalResultPopup";
+import FinalResultPopup from "@/components/FinalResultPopup";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useEffect, useState } from "react";
 
 const Index = () => {
@@ -17,6 +19,17 @@ const Index = () => {
 
   const hasilTmUrl = "https://s.id/HasilTMjycc";
   const [semifinalOpen, setSemifinalOpen] = useState(false);
+  const [finalOpen, setFinalOpen] = useState(false);
+  const [preFinalInfoOpen, setPreFinalInfoOpen] = useState(false);
+  const finalAnnouncementDate = new Date(2025, 10, 8, 0, 0, 0); // 8 Nov 2025 local time
+  const handleOpenFinal = () => {
+    const now = new Date();
+    if (now < finalAnnouncementDate) {
+      setPreFinalInfoOpen(true);
+    } else {
+      setFinalOpen(true);
+    }
+  };
   useEffect(() => {
     // Popup awal: tampilkan flyer hasil semifinal
     const t = setTimeout(() => setSemifinalOpen(true), 800);
@@ -90,7 +103,7 @@ const Index = () => {
 
             <div className="flex justify-center animate-fade-in">
               <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/30 text-white border border-destructive/40 ring-1 ring-destructive/50 shadow-sm shadow-destructive/20 animate-pulse">
-                PENTING: Hasil semi final bisa di cek pada bagian timeline, di bawah
+                PENTING: Hasil dari tahap kompetisi selanjutnya bisa dilihat pada bagian timeline, di bawah
               </Badge>
             </div>
 
@@ -527,6 +540,13 @@ const Index = () => {
                     <p className="text-sm font-semibold text-primary mb-1">8 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Final</p>
                   </div>
+                  <Button
+                    variant="outline"
+                    onClick={handleOpenFinal}
+                    className="whitespace-nowrap"
+                  >
+                    Buka Hasil Final
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -647,6 +667,19 @@ const Index = () => {
       
       {/* Semifinal Result Popup */}
       <SemifinalResultPopup open={semifinalOpen} onOpenChange={setSemifinalOpen} />
+      {/* Final Result Popup */}
+      <FinalResultPopup open={finalOpen} onOpenChange={setFinalOpen} />
+      {/* Pre-Final Info Popup */}
+      <Dialog open={preFinalInfoOpen} onOpenChange={setPreFinalInfoOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center">Tahap semi final belum selesai</DialogTitle>
+          </DialogHeader>
+          <p className="text-center text-muted-foreground">
+            Hasil final akan ditampilkan setelah tahap semifinal selesai dan pengumuman final.
+          </p>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
