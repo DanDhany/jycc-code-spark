@@ -78,7 +78,7 @@ const Index = () => {
 
             <div className="flex justify-center animate-fade-in">
               <Badge className="mb-2 px-3 py-1 rounded-full bg-destructive/30 text-white border border-destructive/40 ring-1 ring-destructive/50 shadow-sm shadow-destructive/20 animate-pulse">
-                PENTING: Batas pendaftaran 29 Oktober 2025
+                PENTING: Hasil semi final bisa di cek pada bagian timeline, di bawah
               </Badge>
             </div>
 
@@ -487,7 +487,7 @@ const Index = () => {
                     onClick={() => setSemifinalOpen(true)}
                     className="whitespace-nowrap"
                   >
-                    Tampilkan Hasil Semifinal
+                    Buka Hasil Semifinal
                   </Button>
                 </CardContent>
               </Card>
