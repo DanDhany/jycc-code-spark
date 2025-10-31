@@ -533,6 +533,7 @@ const Index = () => {
                   <div className="flex-1">
                     <p className="text-sm font-semibold text-primary mb-1">31 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Semi Final</p>
+                    <p className="text-xs text-muted-foreground mt-1">Pengingat: Unduh Template Semifinal untuk lanjut ke babak berikutnya.</p>
                   </div>
                   <Button
                     variant="outline"
@@ -540,6 +541,13 @@ const Index = () => {
                     className="whitespace-nowrap"
                   >
                     Buka Hasil Semifinal
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}
+                    className="whitespace-nowrap"
+                  >
+                    Template Semifinal
                   </Button>
                 </CardContent>
               </Card>
@@ -554,13 +562,6 @@ const Index = () => {
                     <p className="text-sm font-semibold text-secondary mb-1">7 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Semifinalis</p>
                   </div>
-                  <Button
-                    variant="outline"
-                    onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}
-                    className="whitespace-nowrap"
-                  >
-                    Template Semifinal
-                  </Button>
                 </CardContent>
               </Card>
 

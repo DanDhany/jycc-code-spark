@@ -1,7 +1,8 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 type SemifinalResultPopupProps = {
   open: boolean;
@@ -38,6 +39,9 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
         </DialogHeader>
 
         <div className="px-4 pb-4">
+          <Badge className="mb-2 mx-auto block bg-green-100 text-green-700 border-green-200">
+            Selamat kepada tim yang lolos ke babak Semi Final!
+          </Badge>
           {/* Carousel Container */}
           <div className="relative w-[45%] mx-auto">
             <img
@@ -45,6 +49,17 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
               alt={`Hasil Semifinal JYCC - Gambar ${currentIndex + 1}`}
               className="w-full h-auto rounded-md border"
             />
+
+            {/* Center Zoom Button */}
+            <Button
+              variant="outline"
+              size="sm"
+              aria-label="Lihat gambar ukuran penuh"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow rounded-full"
+              onClick={() => window.open(images[currentIndex], "_blank")}
+            >
+              <ZoomIn className="w-4 h-4" />
+            </Button>
             
             {/* Navigation Buttons */}
             <Button
@@ -79,10 +94,16 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
             ))}
           </div>
 
+          {/* Reminder Badge */}
+          <Badge className="mt-3 mx-auto block bg-primary/10 text-primary border-primary/20">
+            Pengingat: Unduh Template Semifinal untuk lanjut ke babak berikutnya.
+          </Badge>
+
           <p className="mt-3 text-center text-red-600 text-sm">
             jika hasil masih belum muncul atau tidak termuat, harap gunakan tombol Lihat Versi Asli dibawah
           </p>
           <div className="mt-2 flex justify-center gap-3">
+            <Button onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}>Template Semifinal</Button>
             <Button onClick={() => window.open("https://drive.google.com/file/d/1ZuVWikJwqKmc3XxmUxL09vgxgV4h7Sdu/view?usp=drive_link", "_blank")}>Lihat Versi Asli</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
