@@ -110,6 +110,21 @@ const Index = () => {
               </Button>
               <Button 
                 size="lg"
+                onClick={() => {
+                  const target = document.getElementById("btn-pengumpulan-semifinal");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth", block: "center" });
+                  } else {
+                    const timelineSection = document.getElementById("timeline");
+                    if (timelineSection) timelineSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              >
+                Pengumpulan Semifinal
+              </Button>
+              <Button 
+                size="lg"
                 variant="outline"
                 onClick={handleViewGuide}
                 className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10"
@@ -562,6 +577,14 @@ const Index = () => {
                     <p className="text-sm font-semibold text-secondary mb-1">7 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Semifinalis</p>
                   </div>
+                  <Button
+                    id="btn-pengumpulan-semifinal"
+                    variant="outline"
+                    onClick={() => window.open("https://forms.gle/xt12es8rUoNxs6xUA", "_blank")}
+                    className="whitespace-nowrap"
+                  >
+                    Pengumpulan Semifinal
+                  </Button>
                 </CardContent>
               </Card>
 
