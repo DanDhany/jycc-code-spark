@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Trophy, Users, Lightbulb, Code, Award, Target, CheckCircle2, Star, HeartPulse } from "lucide-react";
 import SemifinalResultPopup from "@/components/SemifinalResultPopup";
+import SemifinalResultGalleryPopup from "@/components/SemifinalResultGalleryPopup";
 import FinalResultPopup from "@/components/FinalResultPopup";
 import FinalLocationPopup from "@/components/FinalLocationPopup";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -21,6 +22,7 @@ const Index = () => {
   const hasilTmUrl = "https://s.id/HasilTMjycc";
   const [semifinalOpen, setSemifinalOpen] = useState(false);
   const [finalOpen, setFinalOpen] = useState(false);
+  const [semifinalGalleryOpen, setSemifinalGalleryOpen] = useState(false);
   const [finalLocationOpen, setFinalLocationOpen] = useState(false);
   const [preFinalInfoOpen, setPreFinalInfoOpen] = useState(false);
   const finalAnnouncementDate = new Date(2025, 10, 8, 0, 0, 0); // 8 Nov 2025 local time
@@ -734,8 +736,14 @@ const Index = () => {
         </div>
       </footer>
       
-      {/* Semifinal Result Popup */}
-      <SemifinalResultPopup open={semifinalOpen} onOpenChange={setSemifinalOpen} />
+      {/* Semifinal Reminder Popup */}
+      <SemifinalResultPopup 
+        open={semifinalOpen} 
+        onOpenChange={setSemifinalOpen} 
+        onOpenGallery={() => setSemifinalGalleryOpen(true)}
+      />
+      {/* Semifinal Gallery Popup */}
+      <SemifinalResultGalleryPopup open={semifinalGalleryOpen} onOpenChange={setSemifinalGalleryOpen} />
       {/* Final Result Popup */}
       <FinalResultPopup open={finalOpen} onOpenChange={setFinalOpen} />
       {/* Final Location Popup */}

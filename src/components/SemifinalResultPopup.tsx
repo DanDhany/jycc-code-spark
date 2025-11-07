@@ -5,9 +5,10 @@ import { Badge } from "@/components/ui/badge";
 type SemifinalResultPopupProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onOpenGallery?: () => void;
 };
 
-const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps) => {
+const SemifinalResultPopup = ({ open, onOpenChange, onOpenGallery }: SemifinalResultPopupProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -29,7 +30,7 @@ const SemifinalResultPopup = ({ open, onOpenChange }: SemifinalResultPopupProps)
             <Button className="px-6" onClick={() => window.open("https://forms.gle/xt12es8rUoNxs6xUA", "_blank")}>Buka Form Pengumpulan</Button>
           </div>
           <div className="flex justify-center gap-3">
-            <Button onClick={() => window.open("https://drive.google.com/file/d/1ZuVWikJwqKmc3XxmUxL09vgxgV4h7Sdu/view?usp=drive_link", "_blank")}>Lihat Hasil Semifinal</Button>
+            <Button onClick={() => { onOpenChange(false); onOpenGallery && onOpenGallery(); }}>Lihat Hasil Semifinal</Button>
             <Button variant="outline" onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}>Template Semifinal</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
