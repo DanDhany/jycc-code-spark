@@ -113,7 +113,7 @@ const Index = () => {
               <Button 
                 size="lg"
                 onClick={() => {
-                  const target = document.getElementById("btn-pengumpulan-semifinal");
+                  const target = document.getElementById("timeline-pengumuman-final");
                   if (target) {
                     target.scrollIntoView({ behavior: "smooth", block: "center" });
                   } else {
@@ -123,7 +123,7 @@ const Index = () => {
                 }}
                 className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                Pengumpulan Semifinal
+                Lihat Hasil Final
               </Button>
               <Button 
                 size="lg"
@@ -592,7 +592,7 @@ const Index = () => {
 
               {/* Pengumuman Finalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent id="timeline-pengumuman-final" className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
