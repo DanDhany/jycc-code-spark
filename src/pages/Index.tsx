@@ -59,12 +59,12 @@ const Index = () => {
       {/* Header Organizer */}
       <div className="bg-card border-b border-border py-4">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-6 text-foreground">
-              <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-10 md:h-12 object-contain" />
-              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-10 md:h-12 object-contain" />
-              <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="h-10 md:h-12 object-contain" />
-              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-10 md:h-12 object-contain" />
-              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-10 md:h-12 object-contain" />
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-foreground">
+              <img src="/LOGO SI BIRU MEMANJANG.png" alt="Program Studi Sistem Informasi UBAYA" className="h-8 sm:h-10 md:h-12 object-contain" />
+              <img src="/logo-kominfo-jatim-Zpmey.png" alt="Dinas Komunikasi dan Informatika Provinsi Jawa Timur" className="h-8 sm:h-10 md:h-12 object-contain" />
+              <img src="/logo-provinsi-jawa-timur (1).png" alt="Pemerintah Provinsi Jawa Timur" className="h-8 sm:h-10 md:h-12 object-contain" />
+              <img src="/gerbang-baru.png" alt="Jawa Timur Gerbang Baru Nusantara" className="h-8 sm:h-10 md:h-12 object-contain" />
+              <img src="/Universitas-surabaya.png" alt="Universitas Surabaya (UBAYA)" className="h-8 sm:h-10 md:h-12 object-contain" />
           </div>
         </div>
       </div>
@@ -74,12 +74,16 @@ const Index = () => {
         <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
         
-        <div className="relative container mx-auto px-4 py-20 md:py-28">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="relative container mx-auto px-4 pt-10 pb-24 md:pt-12 md:pb-28 lg:pb-32">
+          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in">
-              Jatim Youth Codepreneur Challenge
-            </h1>
+            {/* Pertahankan heading untuk aksesibilitas, tampilkan logo sebagai pengganti visual */}
+            <h1 className="sr-only">Jatim Youth Codepreneur Challenge</h1>
+            <img
+              src="/JYCC-1 Warna.png"
+              alt="Jatim Youth Codepreneur Challenge"
+              className="mx-auto max-w-full w-auto h-32 sm:h-28 md:h-32 lg:h-44 object-contain drop-shadow-lg animate-fade-in"
+            />
             
             <p className="text-xl md:text-2xl text-white/90 font-medium animate-fade-in">
               Berkarya dengan Teknologi, Bertumbuh untuk Negeri
@@ -150,7 +154,7 @@ const Index = () => {
               </Badge>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-8 md:pt-12 max-w-3xl mx-auto">
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-4 text-center">
                   <Trophy className="w-7 h-7 mx-auto mb-2 text-accent" />
@@ -749,7 +753,7 @@ const Index = () => {
       <FinalLocationPopup open={finalLocationOpen} onOpenChange={setFinalLocationOpen} />
       {/* Pre-Final Info Popup */}
       <Dialog open={preFinalInfoOpen} onOpenChange={setPreFinalInfoOpen}>
-        <DialogContent className="max-w-md">
+        <DialogContent className="max-w-md w-[95%] sm:w-[90%] overflow-y-auto max-h-[85vh]">
           <DialogHeader>
             <DialogTitle className="text-center">Tahap semi final belum selesai</DialogTitle>
           </DialogHeader>
