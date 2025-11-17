@@ -45,6 +45,8 @@ const FinalResultPopup = ({ open, onOpenChange }: FinalResultPopupProps) => {
           </p>
           <div className="sticky bottom-0 bg-background/80 backdrop-blur-sm mt-2 px-4 py-2 flex justify-center gap-3">
             <Button onClick={() => window.open("https://drive.google.com/file/d/1bilzDRk0K3jTzbWlIWJggXg2emJaRv9B/view?usp=sharing", "_blank")}>Lihat Versi Asli</Button>
+            <Button onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}>Pengumpulan Finalis</Button>
+            <Button variant="outline" onClick={() => { onOpenChange(false); const target = document.getElementById("timeline-batas-pengumpulan-finalis") || document.getElementById("timeline"); target && target.scrollIntoView({ behavior: "smooth", block: "center" }); }}>Ke Batas Pengumpulan</Button>
             <Button variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>
         </div>

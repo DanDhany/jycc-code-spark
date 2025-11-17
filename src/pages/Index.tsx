@@ -115,18 +115,10 @@ const Index = () => {
               </Button>
               <Button 
                 size="lg"
-                onClick={() => {
-                  const target = document.getElementById("timeline-pengumuman-final");
-                  if (target) {
-                    target.scrollIntoView({ behavior: "smooth", block: "center" });
-                  } else {
-                    const timelineSection = document.getElementById("timeline");
-                    if (timelineSection) timelineSection.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
+                onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}
                 className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                Lihat Hasil Final
+                Pengumpulan Karya Finalis
               </Button>
               <Button 
                 size="lg"
@@ -617,7 +609,7 @@ const Index = () => {
 
               {/* Batas Pengumpulan Karya Finalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent id="timeline-batas-pengumpulan-finalis" className="p-6 flex items-center gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
@@ -625,6 +617,14 @@ const Index = () => {
                     <p className="text-sm font-semibold text-secondary mb-1">21 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Finalis</p>
                   </div>
+                  <Button
+                    id="btn-pengumpulan-finalis"
+                    variant="outline"
+                    onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}
+                    className="whitespace-nowrap"
+                  >
+                    Pengumpulan Finalis
+                  </Button>
                 </CardContent>
               </Card>
 
