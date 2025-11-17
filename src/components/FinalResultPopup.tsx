@@ -25,7 +25,7 @@ const FinalResultPopup = ({ open, onOpenChange }: FinalResultPopupProps) => {
             <img
               src={imgSrc}
               alt="Flyer Hasil Final JYCC"
-              className="w-full h-auto mx-auto rounded-md border"
+              className="w-[10%] h-auto mx-auto rounded-md border"
               referrerPolicy="no-referrer"
               onError={() => setImgSrc("/hasil_final.png")}
             />
@@ -44,8 +44,6 @@ const FinalResultPopup = ({ open, onOpenChange }: FinalResultPopupProps) => {
             jika hasil belum muncul atau tidak termuat, gunakan tombol Lihat Versi Asli di bawah
           </p>
           <div className="sticky bottom-0 bg-background/80 backdrop-blur-sm mt-2 px-4 py-2 flex justify-center gap-3">
-            <Button className="w-full sm:w-auto" onClick={() => window.open("https://drive.google.com/file/d/1bilzDRk0K3jTzbWlIWJggXg2emJaRv9B/view?usp=sharing", "_blank")}>Lihat Versi Asli</Button>
-            <Button className="w-full sm:w-auto" onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}>Pengumpulan Finalis</Button>
             <Button className="w-full sm:w-auto" variant="outline" onClick={() => { onOpenChange(false); const target = document.getElementById("timeline-batas-pengumpulan-finalis") || document.getElementById("timeline"); target && target.scrollIntoView({ behavior: "smooth", block: "center" }); }}>Ke Batas Pengumpulan</Button>
             <Button className="w-full sm:w-auto" variant="outline" onClick={() => onOpenChange(false)}>Tutup</Button>
           </div>

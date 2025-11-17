@@ -93,7 +93,7 @@ const Index = () => {
               Kompetisi Koding untuk siswa SMA/SMK/MA se-Jawa Timur dalam menciptakan solusi bisnis digital berkelanjutan
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 animate-fade-in">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center pt-6 animate-fade-in">
               {/* <Button 
                 size="lg"
                 onClick={handleRegister}
@@ -109,14 +109,14 @@ const Index = () => {
                     timelineSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105 w-full sm:w-auto"
               >
                 Lihat Timeline
               </Button>
               <Button 
                 size="lg"
                 onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}
-                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all hover:scale-105 w-full sm:w-auto"
               >
                 Pengumpulan Karya Finalis
               </Button>
@@ -124,7 +124,7 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 onClick={handleViewGuide}
-                className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10 w-full sm:w-auto"
               >
                 Lihat Panduan
               </Button>
@@ -133,7 +133,7 @@ const Index = () => {
                   size="lg"
                   variant="outline"
                   onClick={handleOpenFinalLocation}
-                  className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10"
+                  className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6 backdrop-blur-sm bg-white/10 w-full sm:w-auto"
                 >
                   Lihat Lokasi Final
                 </Button>
@@ -505,18 +505,18 @@ const Index = () => {
             <div className="space-y-6">
               {/* Technical Meeting */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent className="p-6 flex flex-wrap items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-primary mb-1">25 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Technical Meeting</p>
                   </div>
                   <Button
                     variant="outline"
                     onClick={() => window.open(hasilTmUrl, "_blank")}
-                    className="whitespace-nowrap"
+                    className="w-full sm:w-auto whitespace-nowrap"
                   >
                     Buka Hasil TM
                   </Button>
@@ -525,11 +525,11 @@ const Index = () => {
 
               {/* Batas Pengumpulan Penyisihan */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent className="p-6 flex flex-wrap items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-secondary mb-1">29 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Babak Penyisihan</p>
                   </div>
@@ -538,11 +538,11 @@ const Index = () => {
 
               {/* Pengumuman Semifinalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent className="p-6 flex flex-wrap items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-primary mb-1">31 Oktober 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Semi Final</p>
                     <p className="text-xs text-muted-foreground mt-1">Pengingat: Unduh Template Semifinal untuk lanjut ke babak berikutnya.</p>
@@ -550,14 +550,14 @@ const Index = () => {
                   <Button
                     variant="outline"
                     onClick={() => setSemifinalOpen(true)}
-                    className="whitespace-nowrap"
+                    className="w-full sm:w-auto whitespace-nowrap"
                   >
                     Buka Hasil Semifinal
                   </Button>
                   <Button
                     variant="outline"
                     onClick={() => window.open("https://docs.google.com/document/d/1lZ3f-DMq2fRhGWUmtZJ-ypF78oFt4oHq?rtpof=true&usp=drive_fs", "_blank")}
-                    className="whitespace-nowrap"
+                    className="w-full sm:w-auto whitespace-nowrap"
                   >
                     Template Semifinal
                   </Button>
@@ -566,11 +566,11 @@ const Index = () => {
 
               {/* Batas Pengumpulan Semifinalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent className="p-6 flex flex-wrap items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-secondary mb-1">7 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Semifinalis</p>
                   </div>
@@ -578,7 +578,7 @@ const Index = () => {
                     id="btn-pengumpulan-semifinal"
                     variant="outline"
                     onClick={() => window.open("https://forms.gle/xt12es8rUoNxs6xUA", "_blank")}
-                    className="whitespace-nowrap"
+                    className="w-full sm:w-auto whitespace-nowrap"
                   >
                     Pengumpulan Semifinal
                   </Button>
@@ -587,11 +587,11 @@ const Index = () => {
 
               {/* Pengumuman Finalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-primary/20">
-                <CardContent id="timeline-pengumuman-final" className="p-6 flex items-center gap-6">
+                <CardContent id="timeline-pengumuman-final" className="p-6 flex flex-wrap items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-primary mb-1">8 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Pengumuman Tim yang Masuk Final</p>
                   </div>
@@ -599,7 +599,7 @@ const Index = () => {
                     <Button
                       variant="outline"
                       onClick={handleOpenFinal}
-                      className="whitespace-nowrap"
+                      className="w-full sm:w-auto whitespace-nowrap"
                     >
                       Buka Hasil Final
                     </Button>
@@ -631,11 +631,11 @@ const Index = () => {
               </Card>
 
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-accent/20">
-                <CardContent className="p-6 flex items-center gap-6">
+                <CardContent className="p-6 flex items-start sm:items-center gap-4 sm:gap-6 flex-wrap">
                   <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-accent" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-[200px]">
                     <p className="text-sm font-semibold text-accent mb-1">24 November 2025</p>
                     <p className="text-lg font-semibold text-foreground">Final dan Penyerahan Hadiah</p>
                   </div>
@@ -643,7 +643,7 @@ const Index = () => {
                     <Button
                       variant="outline"
                       onClick={handleOpenFinalLocation}
-                      className="whitespace-nowrap"
+                      className="w-full sm:w-auto whitespace-nowrap"
                     >
                       Lihat Lokasi Final
                     </Button>
