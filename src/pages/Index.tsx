@@ -609,22 +609,24 @@ const Index = () => {
 
               {/* Batas Pengumpulan Karya Finalis */}
               <Card className="shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all border-secondary/20">
-                <CardContent id="timeline-batas-pengumpulan-finalis" className="p-6 flex items-center gap-6">
+                <CardContent id="timeline-batas-pengumpulan-finalis" className="p-6 flex items-start sm:items-center gap-4 sm:gap-6">
                   <div className="w-16 h-16 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-8 h-8 text-secondary" />
                   </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-semibold text-secondary mb-1">21 November 2025</p>
-                    <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Finalis</p>
+                  <div className="flex-1 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+                    <div className="flex-1">
+                      <p className="text-sm font-semibold text-secondary mb-1">21 November 2025</p>
+                      <p className="text-lg font-semibold text-foreground">Batas Pengumpulan Karya Finalis</p>
+                    </div>
+                    <Button
+                      id="btn-pengumpulan-finalis"
+                      variant="outline"
+                      onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}
+                      className="w-full sm:w-auto whitespace-nowrap"
+                    >
+                      Pengumpulan Finalis
+                    </Button>
                   </div>
-                  <Button
-                    id="btn-pengumpulan-finalis"
-                    variant="outline"
-                    onClick={() => window.open("https://forms.gle/QvM6Byu7EMGeX1PfA", "_blank")}
-                    className="whitespace-nowrap"
-                  >
-                    Pengumpulan Finalis
-                  </Button>
                 </CardContent>
               </Card>
 
