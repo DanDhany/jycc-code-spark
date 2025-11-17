@@ -6,8 +6,8 @@ type FinalLocationPopupProps = {
   onOpenChange: (open: boolean) => void;
 };
 
-const addressLine1 = "SGFBE Kampus Ubaya Tenggilis";
-const addressLine2 = "Raya Kalirungkut, Surabaya";
+const addressLine1 = "Ruang Perpustakaan Universitas Surabaya (UBAYA) Lantai 5";
+const addressLine2 = "Jalan Raya Kali Rungkut, Surabaya, Jawa Timur";
 const mapsQuery = `${addressLine1} ${addressLine2}`;
 
 const FinalLocationPopup = ({ open, onOpenChange }: FinalLocationPopupProps) => {
